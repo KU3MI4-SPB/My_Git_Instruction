@@ -178,6 +178,10 @@ Author: KU3MI4 <kuzmichov@bk.ru>
 где будет видно кто, когда и какие коммиты оставлял
 * Есть более короткая версия вывода коммитов:
 ```
+git log --oneline
+```
+получаем
+```
 d33e15f (HEAD) temp commit for repo foler switch
 cdf635c add initialization instruction
 d7f9169 temp commit for new repo
@@ -195,6 +199,43 @@ af9804b add second part
 f37d0a5 initial commit
 ```
 команда удобна когда у нас много коммитов.
+<br>
+
+## 3. Сравнение изменений с последним коммитом
+* Для вывода изменений в файлах по сравнению с последним коммитом, используется команда **git diff**:
+```
+git diff
+```
+получаем ответ
+```
+diff --git a/gitinsruction.md b/gitinsruction.md
+index 674e2dd..47dad74 100644
+--- a/gitinsruction.md
++++ b/gitinsruction.md
+@@ -178,6 +178,10 @@ Author: KU3MI4 <kuzmichov@bk.ru>
+ где будет видно кто, когда и какие коммиты оставлял
+ * Есть более короткая версия вывода коммитов:
++git log --oneline
++```
++получаем
++```
+ d33e15f (HEAD) temp commit for repo foler switch
+ cdf635c add initialization instruction
+ d7f9169 temp commit for new repo
+@@ -195,6 +199,19 @@ af9804b add second part
+ f37d0a5 initial commit
+ команда удобна когда у нас много коммитов.
++<br>
++
++## 3. Сравнение изменений с последним коммитом
++* Для вывода изменений в файлах по сравнению с последним коммитом, используется команда **git diff**:
++```
++git diff
++```
++получаем ответ
+```
+* Тут мы изменения в файлах, которые еще не были добавлены в индекс репозитория
+
 
 
 ### Домашнее задание
