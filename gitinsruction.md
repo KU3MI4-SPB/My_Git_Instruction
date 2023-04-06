@@ -235,7 +235,37 @@ index 674e2dd..47dad74 100644
 +получаем ответ
 ```
 * Тут мы изменения в файлах, которые еще не были добавлены в индекс репозитория
+<br>
 
+## Перемещение между сохранениями
+* Для перемещения между сохранениями нам потребуется вызвать лог:
+```
+git log --oneline
+```
+выводится наш лог с индексами сохранений
+```
+c52f780 (HEAD) add example git diff
+8fbfb16 add commit log manual
+d33e15f temp commit for repo foler switch
+cdf635c add initialization instruction
+d7f9169 temp commit for new repo
+393ea5b add a git setting
+a6633d0 added a mention of the operating system
+3f60246 add install git instruction and picturies
+cd64d95 add pic git site
+f55d96c dowloading git setup file
+7acd078 center header
+199fef8 add pic
+150bdb2 write second part
+af9804b add second part
+5613e87 write first part
+3f22a3e add first part in instruction
+f37d0a5 initial commit
+```
+* Для того чтобы нам переместиться на нужное сохранение, нужно скопировать его индекс и воспользоваться командой **checkout**:
+```
+git checkout af9804b
+```
 
 
 ### Домашнее задание
