@@ -1,5 +1,5 @@
 ![Тут будет наш логотип](gitlogo.png)
-# <center>**Инструкция по Git**
+# <center>**Инструкция по Git**</center>
 ## 1. Установка и настройка Git
 ### Установка Git
 * Заходим на официальный сайт **Git** (https://git-scm.com/downloads)
@@ -272,4 +272,4 @@ git checkout af9804b
 git checkout master
 ```
 
-## <center>*Продолжение следует...*
+## <center>*Продолжение следует...*</center>
