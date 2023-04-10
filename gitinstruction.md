@@ -320,8 +320,3 @@ git branch -d working_with_branches
 Deleted branch working_with_branches (was хххххх)
 ```
 Ветка удалена
-
-
-
-
-## <center>*Продолжение следует...*</center>
