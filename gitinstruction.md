@@ -271,6 +271,3 @@ git checkout af9804b
 ```
 git checkout master
 ```
-
-
-## <center>*Продолжение следует...*</center>
