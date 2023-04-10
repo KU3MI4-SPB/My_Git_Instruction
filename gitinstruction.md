@@ -345,4 +345,7 @@ CONFLICT (content): Merge conflict in gitinstruction.md
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 Это как раз и есть конфликт, который мы рассмотрим в следующем пункте инструкции...
+<br>
 
+## 9. Конфликт
+*Возьмем пример когда e у нас получился конфликт при слиянии веток
