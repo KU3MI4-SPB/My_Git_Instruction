@@ -279,5 +279,6 @@ git checkout master
 git branch имя_новой_ветки
 ```
 
+{Хочу увидеть конфликт}
 
 ## <center>*Продолжение следует...*</center>
