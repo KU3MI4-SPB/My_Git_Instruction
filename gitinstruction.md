@@ -278,6 +278,6 @@ git checkout master
 ```
 git branch имя_новой_ветки
 ```
-
+Хочу конфликт 2
 
 ## <center>*Продолжение следует...*</center>
