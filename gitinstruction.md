@@ -320,3 +320,29 @@ git branch -d working_with_branches
 Deleted branch working_with_branches (was хххххх)
 ```
 Ветка удалена
+<br>
+
+## 7. Слияние веток
+* Например мы создали новую ветку, поработали с ней и теперь настала необходимость добавить это в **master** ветку, для этого сохраняем все в новой ветке, оставляем коммит и переходим в ветку **master** и выполняем слияние:
+```
+git merge имя_сливаемой_ветки
+```
+например
+```
+git merge working_with_branches
+```
+в случае если все хорошо, терминал ответит
+```
+Updating 0500167..941b9a8
+Fast-forward
+ gitinstruction.md | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+```
+но бывают конфликтные ситуации, например в сливаемых ветках на одной и тойже строке у нас разные данные и Git непонимает какие данные нужнее и выдаст например:
+```
+Auto-merging gitinstruction.md
+CONFLICT (content): Merge conflict in gitinstruction.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
+Это как раз и есть конфликт, который мы рассмотрим в следующем пункте инструкции...
+
