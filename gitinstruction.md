@@ -389,6 +389,130 @@ Automatic merge failed; fix conflicts and then commit the result.
 ![Конфликт](conflict5.png)
 
 Таким образом мы слили обе ветки и оставили только тот код который нам нужен и избавились от конфликта при их слиянии.
+<br>
+
+## 10. Работа с удаленными репозиториями
+
+* Регистрация на **github.com**
+
+![singup](github_singup.png)
+
+1. Заходим на сайт **GitHub** (https://github.com/signup) и заполняем регистрационную форму
+2. После регистрации возможно нуно будет подтвердить аккаунт, поэтому проверяем свою электронную почту, находим письмо от GitHub с подтсверждением регистрации и подтверждаем свой аккаунт
+
+* Синхронизация **Visual Studio Code** с аккаунтом **github.com**
+
+1. Нажимаем *Ctrl + Shift + P* и в появившейся строке набираем *>github*
+
+![input](input_github.png)
+
+2. Жмем **Publish to GitHub**
+
+![publish](tap_ok.png)
+
+3. Затем **Разрешить**
+
+![Auth](auth.png)
+
+4. Подтверждаем кнопкой **Authorize Visual-Stidio-Code**
+
+* Создаем репозиторий на **github.com**
+
+1. На сайте GitHub в правом верхнем углу нажимаем **"+"** и **New Repository**, либо заходим на страницу https://github.com/new
+
+![New_Repo](new_repo.png)
+
+2. Указываем имя репозитория в строке **Repository name** и жмем **Create repository**
+
+* Переносим локальный репозиторий на удаленный
+
+Переходим в папку с репозиторием и в терминале набираем:
+```
+git remote add origin https://github.com/KU3MI4-SPB/test2.git
+git branch -M master
+git push -u origin master
+```
+Тем самым связываем наш локальшый и удаленный репозиторий
+
+* Клонируем удаленный репозиторий на локальный
+
+1. Создаем папку для локального репозитория 
+2. Переходим в нее и набираем в терминале: 
+```
+git clone https://github.com/KU3MI4-SPB/test2.git
+```
+
+* Делаем **Fork** репозитория
+
+1. Переходим на любой нужный нам репозиторий на **GitHub** и нажимаем кнопку **Fork**
+2. Тем самым мы переносим этот репозиторий к себе на учетную запись
+3. Далее мы можем внести изменения в код и предложить их автору репозитория
+4. Для этого так же создаем новую папку и в ней из терминала набираем:
+```
+git clone https://github.com/KU3MI4-SPB/ForHomeWork_Git.git
+```
+получаем ответ
+```
+Cloning into 'ForHomeWork_Git'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 1 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+```
+5. Переходим с папку с форком репозитория
+```
+cd .\ForHomeWork_Git\
+```
+6. Создаем новую ветку для того чтобы все изменения делать в ней
+```
+git branch KU3MI4_SPB
+```
+7. Переходим в эту ветку
+```
+git checkout KU3MI4_SPB
+```
+8. Вносим вне нужные нам изменения в код
+9. Добавляем все новые изменения и файлы, если таковые есть в репозиторий командой:
+```
+git add .
+```
+10. И добавляем финальный коммит:
+```
+git commit -m 'add my instruction'
+```
+11. Отправляем все изменения на удаленный репозиторий 
+```
+git push
+```
+получаем ответ 
+```
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 61.20 KiB | 10.20 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/KU3MI4-SPB/ForHomeWork_Git.git
+   fa5c551..aa8ad52  KU3MI4_SPB -> KU3MI4_SPB
+```
+
+* Предлагаем автору наши изменения **Pull request**
+
+1. Переходим в репозиторий на своем аккаунте **GitHub**
+2. Меняем ветку на ту в которой делали изменения и жмем кнопку **Compare & pull request**
+
+![pullRbutton](pullR_button.png)
+
+3. Добавляем информацию и комментарий для автора и нажимаем **Create pull request**
+
+![pullR1](pullR_1.png)
+
+4. Наш **Pull request** готов
+
+![pullR2](pullR_2.png)
+
+
 
 .............................................................................
-
